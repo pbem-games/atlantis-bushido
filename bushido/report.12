@@ -1,0 +1,86 @@
+Atlantis Report For:
+2 (12) (War 1, Trade 1, Magic 1, Stealth 1)
+January, Year 1
+
+Atlantis Engine Version: 5.0.0 (beta)
+Way of the Sword, Version: 0.0.1 (beta)
+
+Faction Status:
+Tax Regions: 0 (4)
+Trade Regions: 0 (4)
+
+War specialists: 1 Samurai (1 maximum total)
+Trade specialists: 1 Merchant (2 maximum total)
+Magic specialists: 1 Sorceror (1 maximum total)
+Stealth specialists: 1 Ninja (1 maximum total)
+
+Declared Attitudes (default Neutral):
+Hostile : none.
+Unfriendly : none.
+Neutral : none.
+Friendly : none.
+Ally : none.
+
+Unclaimed silver: 20520.
+
+swamp (1,5) in Sado, 447 peasants, $116.
+------------------------------------------------------------
+  The weather was clear last month; it will be clear next month.
+  Wages: $11.3 (Max: $226).
+  Wanted: none.
+  For Sale: 17 peasant [PEAS] at $45, 3 buke [BUKE] at $90.
+  Entertainment available: $5.
+  Products: 11 grain [GRAI], 16 wood [WOOD], 19 herbs [HERB].
+
+Exits:
+  North : swamp (1,3) in Shimushiru.
+  Northeast : swamp (2,4) in Sado.
+  Southeast : swamp (2,6) in Sado.
+  South : swamp (1,7) in Sado.
+  Southwest : swamp (0,6) in Shimushiru.
+  Northwest : swamp (0,4) in Shimushiru.
+
+* Samurai (76), 2 (12), behind, revealing faction, won't cross water,
+  samurai [SAM], kimono [KMNO], katana [KATA]. Weight: 12. Capacity:
+  0/0/15/0. Skills: way of the samurai [WSAM] 3 (180), combat [COMB] 1
+  (30), tactics [TACT] 1 (30). Can Study: hawking [HAWK], kiaijutsu
+  [KIAI], za-zen [ZAZE].
+* Merchant (77), 2 (12), avoiding, behind, revealing faction, won't
+  cross water, merchant [MER], kimono [KMNO], tanto [TANT]. Weight:
+  12. Capacity: 0/0/15/0. Skills: way of the merchant [WMER] 3 (180),
+  caravan master [CARM] 1 (30). Can Study: caravan master [CARM],
+  commerce [COMM], gambling [GAMB], tea ceremony [TEAS].
+* Ninja (78), 2 (12), avoiding, behind, revealing faction, won't cross
+  water, ninja [NIN], ninja-to [NINJ], kimono [KMNO]. Weight: 12.
+  Capacity: 0/0/15/0. Skills: way of the ninja [WNIN] 3 (180), combat
+  [COMB] 1 (30), stealth [STEA] 3 (180). Can Study: resist elements
+  [RESI], wilderness movement [WILD], throwing star [THRW], camouflage
+  [CAMO].
+* Sorceror (79), 2 (12), avoiding, behind, revealing faction, won't
+  cross water, sorceror [SOR], kimono [KMNO], tanto [TANT]. Weight:
+  12. Capacity: 0/0/15/0. Skills: way of the sorceror [WSOR] 3 (180),
+  mind reading [MIND] 1 (30), magical healing [MHEA] 1 (30). Can
+  Study: demon lore [DEMO], earth lore [EART], fire lore [FIRE], gate
+  lore [GATE], shield lore [SHLD], spirit lore [SPIR], undead lore
+  [UNDE], weather lore [WEAT], invisibility [INVI], magical healing
+  [MHEA], mind reading [MIND], true seeing [TRUE].
+* peasant army (80), 2 (12), revealing faction, won't cross water, 100
+  peasant [PEAS], 100 yari [YARI], 100 padded armor [PARM]. Weight:
+  1200. Capacity: 0/0/1500/0. Skills: combat [COMB] 3 (180).
+* peasant farmers (81), 2 (12), avoiding, behind, revealing faction,
+  won't cross water, 10 peasant [PEAS]. Weight: 100. Capacity:
+  0/0/150/0. Skills: farming [FARM] 3 (180).
+* peasant builders (82), 2 (12), avoiding, behind, revealing faction,
+  won't cross water, 10 peasant [PEAS], 10 horses [HORS], 10 wagons
+  [WAGO], 20 wood [WOOD], 20 stone [STON]. Weight: 2200. Capacity:
+  0/700/3350/0. Skills: building [BUIL] 3 (180).
+* peasant rabble (83), 2 (12), avoiding, behind, revealing faction,
+  won't cross water, 100 peasant [PEAS], 10 horses [HORS], 10 wagons
+  [WAGO], 1738 grain [GRAI]. Weight: 10690. Capacity: 0/700/4700/0.
+  Skills: none.
+
++ Crypt [1] : Crypt, closed to player units.
+  - Undead (133), 69 skeletons [SKEL], 16 undead [UNDE].
+
+
+

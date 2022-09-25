@@ -1,0 +1,19 @@
+AtlantisPlayerStatus
+Version: 327680
+TurnNumber: 0
+GameStatus: New
+
+Faction: 1
+Name: The Guardsmen (1)
+Email: NoAddress
+Password: none
+LastOrders: 0
+SendTimes: 1
+Template: long
+Faction: 2
+Name: Creatures (2)
+Email: NoAddress
+Password: none
+LastOrders: 0
+SendTimes: 1
+Template: long

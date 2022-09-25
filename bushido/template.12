@@ -1,0 +1,61 @@
+
+Orders Template (Long Format):
+
+#atlantis 12 "test"
+
+;*** swamp (1,5) in Sado ***
+
+unit 76
+;Samurai (76), behind, revealing faction, won't cross water, samurai
+;  [SAM], kimono [KMNO], katana [KATA]. Weight: 12. Capacity: 0/0/15/0.
+;  Skills: way of the samurai [WSAM] 3 (180), combat [COMB] 1 (30),
+;  tactics [TACT] 1 (30). Can Study: hawking [HAWK], kiaijutsu [KIAI],
+;  za-zen [ZAZE].
+
+unit 77
+;Merchant (77), avoiding, behind, revealing faction, won't cross water,
+;  merchant [MER], kimono [KMNO], tanto [TANT]. Weight: 12. Capacity:
+;  0/0/15/0. Skills: way of the merchant [WMER] 3 (180), caravan master
+;  [CARM] 1 (30). Can Study: caravan master [CARM], commerce [COMM],
+;  gambling [GAMB], tea ceremony [TEAS].
+
+unit 78
+;Ninja (78), avoiding, behind, revealing faction, won't cross water,
+;  ninja [NIN], ninja-to [NINJ], kimono [KMNO]. Weight: 12. Capacity:
+;  0/0/15/0. Skills: way of the ninja [WNIN] 3 (180), combat [COMB] 1
+;  (30), stealth [STEA] 3 (180). Can Study: resist elements [RESI],
+;  wilderness movement [WILD], throwing star [THRW], camouflage [CAMO].
+
+unit 79
+;Sorceror (79), avoiding, behind, revealing faction, won't cross water,
+;  sorceror [SOR], kimono [KMNO], tanto [TANT]. Weight: 12. Capacity:
+;  0/0/15/0. Skills: way of the sorceror [WSOR] 3 (180), mind reading
+;  [MIND] 1 (30), magical healing [MHEA] 1 (30). Can Study: demon lore
+;  [DEMO], earth lore [EART], fire lore [FIRE], gate lore [GATE],
+;  shield lore [SHLD], spirit lore [SPIR], undead lore [UNDE], weather
+;  lore [WEAT], invisibility [INVI], magical healing [MHEA], mind
+;  reading [MIND], true seeing [TRUE].
+
+unit 80
+;peasant army (80), revealing faction, won't cross water, 100 peasant
+;  [PEAS], 100 yari [YARI], 100 padded armor [PARM]. Weight: 1200.
+;  Capacity: 0/0/1500/0. Skills: combat [COMB] 3 (180).
+
+unit 81
+;peasant farmers (81), avoiding, behind, revealing faction, won't cross
+;  water, 10 peasant [PEAS]. Weight: 100. Capacity: 0/0/150/0. Skills:
+;  farming [FARM] 3 (180).
+
+unit 82
+;peasant builders (82), avoiding, behind, revealing faction, won't
+;  cross water, 10 peasant [PEAS], 10 horses [HORS], 10 wagons [WAGO],
+;  20 wood [WOOD], 20 stone [STON]. Weight: 2200. Capacity:
+;  0/700/3350/0. Skills: building [BUIL] 3 (180).
+
+unit 83
+;peasant rabble (83), avoiding, behind, revealing faction, won't cross
+;  water, 100 peasant [PEAS], 10 horses [HORS], 10 wagons [WAGO], 1738
+;  grain [GRAI]. Weight: 10690. Capacity: 0/700/4700/0. Skills: none.
+
+#end
+

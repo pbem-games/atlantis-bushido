@@ -1,0 +1,292 @@
+Changes from 4.0.10i -> 5.0.0
+--------------------------------------------------
+   -- Fixed brokeness in conquest map generation caused by terrain patch
+   -- Fixed potential namespace conflict on 'fill' from template.cpp
+   -- Changed function of TEMPLATE order, as well as report format:
+      the TEMPLATE order information is now stored with the other faction
+      details (like TIMES), in the "players" file, like so:
+      Template: {off|short|long|map}
+      It is left to the server to handle this item (much like the
+      "SendTimes:" item in the "players" file).  During turn run, there will
+      be two files produced for each faction ID:  report.ID, and template.ID .
+      In cases where "off" was chosen, a "short" report will be produced
+      for the faction (thus allowing your server to propagate a set of
+      orders automatically [if you do that sort of thing] to the next
+      turn).
+   -- Fixed bug in generation of extremely large and extremely small worlds
+      and levels.  Second bug was introduced by artic towns patch.
+   -- Fixed bug in movement costs when WEATHER_EXISTS was 0
+   -- Fixed the broken 'faction: newNoLeader' and 'startLoc:' directives.
+      'Faction: new' now takes some additional parameters on the data line
+      so you can say 'Faction: new' (create a normal faction),
+      'Faction: new 10 10 1' (create a normal faction but put the initial
+      leader in location 10,10,1 instead of nexus) or 'Faction: new noleader'
+      (you can also use 'Faction: new noleader 10 10 1') which will
+      create a leaderless faction (with the location if specified).  And
+      you can then use the newUnit/Item/Skill commands to customize that
+      unit exactly as you want.
+   -- Fixed bug where nexus was an odd number of regions in multi-hex nexus.
+      (courtesy of Ben Lloyd)
+   -- Fixed a divide by zero bug in calculating population.  (courtesy of
+      Ben Lloyd)
+   -- Fixed bug where monfaction and guardfaction were not being initialized
+      correctly and another where monfaction was being called as faction 2
+      hardcoded (courtesy of Ben Lloyd)
+   -- Fixed RunPortalLore to actually use GetTargetInRange() rather than
+      calling GetDist() directly.
+   -- Added "number of days taught" to output from study.
+   -- Fixed misleading damage message on monsters.
+   -- Fixed coredump and rangecheck when a region that was out of range was
+      used in a targetted spell.
+   -- Sorted item reporting [men/monsters/arms/mounts/vehicles/other/
+      silver] in ItemList.
+   -- Gates are closed part of the year when GATES_NOT_PERENNIAL is set to a
+      value between 1 and 11 (the number of months a gate is open). Closed
+      gates cannot be detected (other than by casting detect gate in the
+      same region), and cannot be used except as a target gate for random
+      jumps. The nexus gate is always open, as are the starting city gates
+      when START_GATES_OPEN is set. Closed gates are reported as such when 
+      SHOW_CLOSED_GATES is set (this gamedef was introduced to keep report
+      formats consistent with what some clients' parsers might expect). If
+      this is not set, the presence of closed gates will not be reported at
+      all.
+      Note that closing gates introduce a strategic element as not all gates
+      will lead to all others (through targetted jumps anyway) - the opening
+      period of both gates need to overlap to make a targetted jump possible.
+   -- Fixed a bug where gluttony became a sin (under skill starvation).
+   -- Save out abbreviation for items and terrain name for terrains in
+      output file rather than the index.
+   -- Fixed rounding error in pillaging.
+   -- Fixed setup error in market.
+   -- Added BANKs, Banking skill and BANK WITHDRAW & DEPOSIT.
+   -- made code compile under GCC 3.2 with no warnings/errors
+   -- fixed bug where monsters were not affected by invisibility cast on 
+      a unit.
+   -- Units will be NOCROSS by default when created.
+   -- Units will only inherit AUTOTAX flag and GUARD status if they are
+      combat ready.
+   -- Lowered merfolk from 1000 value of spoils down to 200.  More in
+      line with their difficulty.  Also lowered their spoil type to
+      normal.. Pirates raised to IT_ADVANCED.
+   -- Fix bug in AString::value() where integer could be overflowed into
+      a negative value allowing such fun tricks as creating items out of
+      nothing. (Bug reported by Sergey Budnevitch <fabler@mtu.ru>)
+   -- Fixed bug in faction type changing where a faction could set magic
+      5, get apprentices, and then change away from magic 5 but keep the
+      apprentices.
+   -- Added 'transport' and 'distribute' orders.  Transport allows movement
+      between friendly units with the quartermaster skill within non-local
+      transport distance and from any friendly unit within local transport
+      distance to a quartermaster.  Distribute allows shipment of items
+      from a quartermaster to any friendly unit within local transport
+      range.  Use of these skills require the quartermaster to be located
+      in a caravanserai (requires building 2/20 wood or stone to construct).
+      The number of quartermasters is limited by the number of trade points.
+      Use of distribute and transport counts as a trade use in the hex as
+      well.  There are options to allow the level of Quartermaster skill
+      to affect the non-local transport distance or the cost of shipping
+      items non-locally.
+   -- Fixed bug in tax being a month-long order and issuing the 'tax'
+      command giving an error about work overwriting and then the unit
+      working instead of taxing.
+   -- Fixed bug where autotax didn't work if DEFAULT_WORK_ORDER was
+      disabled and the unit was submitted as part of an orderset but had
+      blank orders (only when TAX_PILLAGE_MONTHLONG was set).
+   -- Fixed a bug where withdraw didn't give item info on items which the
+      faction hadn't already seen the item info.
+   -- GROW_RACES option to disperse races across an area at world creation
+      rather than set them up hex-by-hex. This is tuneable by adjusting the
+      gamedef value.
+   -- PLAYER_ECONOMY: very basic ruleset for the player-run economy are in
+      place.  Enabling this means that population grows or dies according to
+      given space (habitat) and other factors and that the economy is
+      determined by a region's development parameter. Recruitment reduces
+      the population while give 0 orders increase it (no check for races
+      yet). This is not yet reflected in the rules.
+   -- Started work on getting rid of the hardcoded enums.  Battle Items,
+      Weapons, Armors, Mounts and Men are now done, as are Effects, Specials,
+      and Ranges.  They are now completely looked up based on a unique text
+      key to find the one desired.
+   -- Fixed a small goof in the grow races code (a race (I_VIKING for example)
+      was being used as an index into the ManDefs array.  This worked fine for
+      the 'base' races, but would have failed on any of the extended ones.
+   -- Fixed bug in transport which didn't prevent the use of incomplete
+      transport structures.
+   -- Added Tony Briggs <abriggs@iinet.net.au> COASTAL_FISH patch.
+   -- Initial cut at 'attribute' and hooking them up to skills/items/unit
+      flags which modify them.  This will hopefully get rid of some of the
+      hackishness with some hardcoded skills.
+   -- Fixed riding check in GetAttackRiding to use the lowest weight man
+      in the unit (for races which are not 'normal weight')
+   -- Attributes now handle monsters as well, and there is a PracticeAttribute
+      which knows how to practice skills which modify attributes.  This gets
+      rid of the majority of places where COMB, OBSE, STEA, and TACT were
+      used raw in the code!
+   -- Cleaned up NotifySpell so it's generic.
+   -- Items now have a max_inventory value.  This lets us ensure no more than
+      one balrog per unit nicely, and we can limit arbitrary items if we want.
+   -- The monster escape code is now much more generic.  Still not 100% great
+      but better than it was!
+   -- Lots of uses of I_LEADER replaced with a type flag IT_LEADER.  There
+      are still some, but the groundwork for multiple leader races is getting
+      there.
+   -- Changed USE_PREPARE slightly.  There is now a 'strict' and a 'normal'
+      setting for USE_PREPARE.  Under strict, the READY command MUST be
+      used or the unit will not use any battle items.  Under normal, the
+      unit will fall back on the battle items list.
+   -- gamedefs OCEAN and CONTINENT_SIZE now determine surface level parameters.
+   -- Fixed a bug which caused the first mage casting Earth Lore in a
+      region to recieve 2*level less silver than he should.
+   -- Fixed a bug where an army where all casualties were healed were
+      prevented from further moves or attacks.  Full healing should mean
+      no penalties.
+   -- Fixed a bug in output of rules dealing with skill-based maintenance.
+   -- Fixed a bug dealing with the cost of non-skilled units versus skilled
+      units when in a maintenance mode which requires skill based upkeep.
+      Units will now pay the maximum of the skill based upkeep or the normal
+      upkeep.  This means that GM's should probably *lower* the normal upkeep
+      to something more reasonable than 10/20 if they are using the skill
+      based upkeep unless they JUST want to penalize higher skilled leaders.
+   -- Fixed bug where completed buildings weren't providing combat protection.
+   -- Add some additional information to battle reports to help out the
+      author of atlaclient.
+   -- Fixed a bug where issuing a build order and an enter order on the same
+      turn caused you to be in the wrong building and thus fail to build.
+   -- Fixed bug in construct gate which made it successful 100% of the time
+      at level 1, instead of 20% at level 1 up to 100% at level 5.
+   -- Fixed bug where @endturn failed to work.
+   -- Fixed another bug in skill based maintenance.
+   -- Calls to CleanUpWater() and SeverLandBridges() now part of the default
+      surface level creation. Also added some variability in terrain growth
+      and some code to prevent land from squeezing onto the north and south
+      map edges.
+   -- Added an option to limit tact-5 leaders based on the number of points
+      spent on war.
+   -- Added coracles.
+   -- CleanUpWater() now uses recursive calls to CheckSea() and is configurable
+      via SEA_LIMIT. Added SEVER_LAND_BRIDGES gamedef to control severing
+      behaviour.
+   -- Added TERRAIN_GRANULARITY gamedef that controls variability in terrain
+      distribution.
+   -- Added another variant: Fracas!
+   -- Added in an option to put varying bullet points in front of units 
+      (was one of the TODO items)
+   -- Added in flags to individually turn off the ability to study, teach 
+      or gain experience in a skill (another one of the TODO items, requested 
+      for Ceran)
+   -- Option to create surface level with a fractal algorithm. A new GeoMap
+      class was implemented to handle the generation of fractal geographical
+      maps for world creation. Gamedefs FRACTAL_MAP, FRACTAL_SCATTER and
+      FRACTAL_SMOOTH govern this method of map generation
+   -- Fix bug in ARegion destructor  
+   -- Added code to generate Icosahedral (ie, approximately spherical)
+      levels.  Cleaned up some direction handling and some assumptions
+      about there always being a region where you expected one to be.
+   -- Fixed bug in CheckSea() where left of D_NORTH gave you D_NORTHEAST.
+   -- Created map.cpp in the gameset directory and moved world creation code
+      from aregion.cpp to map.cpp to allow for game specific setup routines
+   -- Removed FRACTAL_... gamedefs - these things are now handled by game
+      specific code in map.cpp
+   -- Created economy.cpp in the main directory and moved economy-related code
+      from aregion.cpp into economy.cpp.
+   -- Tidied up market setup: markets now have a fixed number of normal-type
+      buy/sell items. The items are now related to the racial skills and
+      the produceable resources in the region. This removes a lot of the
+      weapons and tools on sale in the game.
+   -- Changed the way market activity figures in town growth. Only grain and
+      livestock as well as trade items are needed for town growth - all other
+      items can be traded for extra gain as a replacement for untraded grain
+      or livestock.
+   -- Added code to create City Guards from normal men if LEADER_EXIST isn't
+      set.
+   -- MakeManUnit(..) function in npc.cpp now helps with setting up
+      npc units consisting of normal men, their weapons and armor (if any).
+      The idea is that the same code can be used to easily create roaming
+      npc units later on...
+   -- Fixed NameRegions() in the fractal set-up (in the kingdoms game).
+   -- Added a gamedef ADVANCED_FORTS which implements the fort modification
+      to attack chance idea. See gamdefs.h for details. Nothing done about
+      routing or any other suggestions connected to forts yet.
+   -- Added some gamedefs that allow incremental calculation of tax income rather
+      than getting all-or-nothing. TAX_INCOME has been replaced by TAX_BASE_INCOME,
+      and there's TAX_BONUS_WEAPON for weapons, TAX_BONUS_ARMOR and TAX_BONUS_FORT.
+      The weapons usable by TAX_WEAPON_BONUS are determined by the setting of
+      the WHO_CAN_TAX gamedef. Note that only units that are basically able to
+      tax will receive ANY silver. *Still need to update genrules.cpp to reflect
+      this in detail!*
+   -- Put the tax-relevant gamedefs into one place.
+   
+   -- Lots of stuff that people haven't documented here (including me) ...
+   
+   -- Fixed bug in market creation where disabled trade goods would leave blank spots
+   -- Fixed bug in world creation where disabled races would still be used
+   -- Added an updated version of the world editing code
+   -- Economy-Rehaul:
+   -- Wages are now fractional with one decimal point, and IMPORTANTLY(!!)
+      are stored as actual wages * 10 (int value). Concomitantly, productivity in Production
+      had to be raised by a factor of ten, too, so that silver production works as usual.
+   -- Wages now depend on development per default. TownType is determined not only
+      by town population but also by it's development.
+   -- TOWN_DEVELOPMENT gamedef now controls the town type for towns at creation time
+      as well as their relative development level.
+   -- New AddTown() functions to provide a name or town type at start. Changed the functions to
+      create StartingCities to reflect the changes in the town economy code.
+   -- increased overall population by 5. Wages etc are now produced per 5 inhabitants. This is
+      largely cosmetic until DYNAMIC_POPULATION is implemented - then there will be direct
+      interaction between recruiting, disbanding and population.
+   -- [NOTE:] still to do: effective PostTurn adjustment of development, habitat for long-term growth
+   
+   -- fixed the bug where illusionary items weren't identified as such.
+   -- fixed some potential problem with new city guards' weapons, and altered the give command so
+      NPC units cannot be targeted.
+   -- included a check for valid item type in ItemList.SetNum()
+   -- adjusted default weapon length according to soldier's maxhits, preventing creatures from getting
+      an automatic reduction of their combat strength due to weapon length.
+   -- fixed a bug in the spell description of ENGRAVE_RUNES_OF_WARDING.
+   -- fixed a bug with faction passwords in parsing and report handling with certain GM utilities.
+   -- added an observation variable to Farsight that is set at cast time to circumvent problems
+      of referencing units during report write-out that have been killed since casting.
+   -- fixed ShowSpecial() to correctly show the protection of shield items as personal, not
+      army-wide shields (taken from Bradley's Nylandor code).
+   -- added Ant's GM's code of conduct into the GAMEMASTER file.
+   -- fixed the bug where NOMOUNT type weapons (pikes) were never used.
+   -- removed all traces of BANKS.
+   -- added FLEETS. Ships are now handled as items, either belonging to a fleet object or to
+      a units itemlist as unfinished ships. Also, finally Summon Wind is handled in a neat way.
+      There's a bonus to fleet speeds for summon wind mages (who can bundle their efforts) and
+      for highly skilled sailors sailing in good ships. Also changed the skillshow for S_SUMMON_WIND
+      and the genrules (just scantily) to take the ship info from both items and objects. Ships _may_
+      still be objects but then cannot act as parts of fleets and this is discouraged.
+   	  Unfinished ships may not be given (except given away completely), but finished ship may be transferred
+   	  between the owners of fleets.
+   -- modified GIVEing of ships so that new fleets get created dynamically, added code for
+      build helpers in shipbuilding, and cleaned up a bug in the removal of empty fleets
+   -- changed fleet reports so that single-ship fleets show the ship type as <object type>
+      rather than "Fleet". Also no ship list is displayed for them.
+   -- implemented ENTER NEW <alias>. New fleets created during GIVE orders are now given aliases that
+      may be specified in an Enter order.	
+   -- implemented handling of ship items in spoils
+   -- prevented ship items from being PRODUCED
+   -- updated the skillshows and itemshows to handle ship items properly
+   -- added the STUDY [skill] [level] option for repeated study. STUDY is no longer useable with the
+      '@' symbol as a repeating order  
+   -- moved EmptyHell() to Game:RunGame() to prevent dead mages bug with IMPROVED_FARSIGHT.
+   -- added an IsAlive() check to Unit::CanReallySwim() to prevent newly formed units from LEAVING
+      a ship and then drowning during give.
+   -- fixed bug where clear skies didn't affect sailing cost.
+   -- added REQUIRED_EXPERIENCE. Units have their study rate (in normal games always 30 days per
+      month no matter what) adjusted when they have significantly less or much more experience
+      than days of study. (Currently still using the old Practice mechanism to gain experience)
+   -- fixed a number of issues: a bug where products and markets weren't updated, the gold 
+      amount for earth lore was adjusted to the new wagesystem, item reporting now prevents double
+      posting of items, and CountTaxers includes a fix that prevents bugs when an IT_MAN item is
+      a mount, weapon or other, tax-relevant item at the same time (centaurs in fracas game).
+   -- fixed the bug with BUILD orders without an object given
+   -- added Christopher Allen's changes to the GAMEMASTER file regarding Dev-C++
+   -- applied Max Shariy's patch for replacing i_rand.c with i_rand.cpp
+   -- fixed the flying flag for fleets to enable flying movement.
+   -- modified the ship type items and replaced clippers and galleons with more suitable
+      alternatives. They are not balanced or all included yet for compatibility with currently
+      running test games.
+   -- fixed the bugs where pillaging could do too much damage to regions, and where maxwages and
+      maxentertainment could drop below zero.

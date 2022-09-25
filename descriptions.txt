@@ -1,0 +1,471 @@
+okuden [OKUD] 1: This is a samurai only ability and study of this
+  skill outside of a RYU is at half rate. Okuden are the secret 
+  teachings of the samurai, handed down from the sword Masters.
+  A unit with this skill gains extra attacks with melee wepaons 
+  in battle. The number of extra attacks conferred in battle is
+  equal to the level of this ability. This skill stacks with the
+  attacks provided by the NITO skill. This skill requires way 
+  of the samurai [WSAM] 5, and combat [COMB] 5 to begin to study. 
+  This skill costs 100 silver per month of study.
+
+steel [STEE], weight 10. Units with weaponsmith [WEAP] of at least
+  level 3 may PRODUCE this item from 2 iron [IRON], hardwood [HRWD] at
+  a rate of 1 per man-month. Steel is used in the manufacture of Master
+  weapons.This item must be produced in a Forge.
+
+no-dachi [NODA], weight 2, costs 375 silver to withdraw. This is a 
+  slashing weapon. This is a two-handed sword. No skill is needed
+  to wield this weapon. This weapon grants a bonus of 4 on attack 
+  and a bonus of 2 on defense. Only foot troops may use this weapon. 
+  There is a 50% chance that the wielder of this weapon gets a 
+  chance to attack in any given round. This weapon cannot be used 
+  during assassination attempts. This weapon attacks versus the 
+  target's defense against melee attacks. This weapon allows 1 
+  attack every 2 rounds. Units with weaponsmith [WEAP] of at 
+  least level 3 may PRODUCE this item from 3 iron [IRON] at a 
+  rate of 1 per 3 man-months.
+
+naginata [NAGI], weight 2, costs 125 silver to withdraw. This is a
+  long piercing weapon consisting of a pole arm with a curved blade
+  at its end.  No skill is needed to wield this weapon. This
+  weapon grants a bonus of 3 on attack and defense. This weapon also
+  grants a bonus of 2 against mounted opponents. Only foot troops may
+  use this weapon. There is a 50% chance that the wielder of this
+  weapon gets a chance to attack in any given round. This weapon
+  cannot be used during assassination attempts. This weapon attacks
+  versus the target's defense against melee attacks. This weapon
+  allows 1 attack every 2 rounds. Units with weaponsmith [WEAP] of at
+  least level 2 may PRODUCE this item from wood [WOOD], iron [IRON] at
+  a rate of 1 per 2 man-months.
+
+yari [YARI], weight 1, costs 125 silver to withdraw. This is a long
+  piercing weapon. This weapon is the common spear. 
+  No skill is needed to wield this weapon. This
+  weapon grants a bonus of 2 on attack and defense. This weapon also
+  grants a bonus of 2 against mounted opponents. Wielders of this
+  weapon, if mounted, get their riding skill bonus on combat attack
+  and defense. There is a 50% chance that the wielder of this weapon
+  gets a chance to attack in any given round. This weapon cannot be
+  used during assassination attempts. This weapon attacks versus the
+  target's defense against melee attacks. This weapon allows 1 attack 
+  per round. Units with weaponsmith [WEAP] of at least level 1 may
+  PRODUCE this item from wood [WOOD] at a rate of 2 per man-month.
+
+dai-kyu [DKYU], weight 1. This is a ranged armor-piercing weapon.
+  The Dai-kyu is a heavy bow the height of a man requiring high
+  strength to draw and fire.
+  Knowledge of longbow [LBOW] is needed to wield this weapon.
+  Attackers do not get skill bonus on defense. There is a 50% chance
+  that the wielder of this weapon gets a chance to attack in any given
+  round. This weapon cannot be used during assassination attempts.
+  This weapon attacks versus the target's defense against ranged
+  attacks. This weapon allows 1 attack  per round. Units with
+  weaponsmith [WEAP] of at least level 4 may PRODUCE this item from 2
+  wood [WOOD] at a rate of 1 per 4 man-months.
+
+han-kyu [HKYU], weight 1, costs 125 silver to withdraw. This is a
+  ranged piercing weapon. The han-kyu is the common small bow.
+  Knowledge of longbow [LBOW] is needed to
+  wield this weapon. This weapon grants a penalty of 2 on attack.
+  Attackers do not get skill bonus on defense. There is a 50% chance
+  that the wielder of this weapon gets a chance to attack in any given
+  round. This weapon cannot be used during assassination attempts.
+  This weapon attacks versus the target's defense against ranged
+  attacks. This weapon allows 1 attack  per round. Units with
+  weaponsmith [WEAP] of at least level 1 may PRODUCE this item from
+  wood [WOOD] at a rate of 1 per man-month.
+
+no-dachi (masterwork) [NOMW], weight 1. This is a long slashing
+  weapon. No skill is needed to wield this weapon. This is a two-handed
+  sword. This weapon grants a bonus of 6 on attack and a bonus of 3 on defense. Only foot troops
+  may use this weapon. There is a 50% chance that the wielder of this
+  weapon gets a chance to attack in any given round. This weapon
+  cannot be used during assassination attempts. This weapon attacks
+  versus the target's defense against melee attacks. This weapon
+  allows 1 attack every 2 rounds. Units with master weaponsmith [MWEA]
+  of at least level 2 may PRODUCE this item from 3 steel [STEE] at a
+  rate of 1 per 2 man-months. This item must be produced in a Forge.
+
+dai-kyu (masterwork) [DKMW], weight 1. This is a ranged armor-piercing
+  weapon. The Dai-kyu is a heavy bow the height of a man requiring high
+  strength to draw and fire.
+  Knowledge of longbow [LBOW] is needed to wield this weapon.
+  This weapon grants a bonus of 2 on attack. Attackers do not get
+  skill bonus on defense. There is a 50% chance that the wielder of
+  this weapon gets a chance to attack in any given round. This weapon
+  cannot be used during assassination attempts. This weapon attacks
+  versus the target's defense against ranged attacks. This weapon
+  allows 1 attack  per round. Units with master weaponsmith [MWEA] of
+  at least level 2 may PRODUCE this item from 2 hardwood [HRWD] at a
+  rate of 1 per 2 man-months. This item must be produced in a Forge.
+
+no-dachi (magical) [NOMG], weight 1. This is a long armor-piercing
+  weapon. This is a two handed sword. No skill is needed to wield this weapon. This weapon grants
+  a bonus of 7 on attack and a bonus of 4 on defense. Only foot troops
+  may use this weapon. There is a 50% chance that the wielder of this
+  weapon gets a chance to attack in any given round. This weapon
+  cannot be used during assassination attempts. This weapon attacks
+  versus the target's defense against melee attacks. This weapon
+  allows 1 attack every 2 rounds. Units with master weaponsmith [MWEA]
+  of at least level 4 may PRODUCE this item from 3 adamantite [ADMT]
+  at a rate of 1 per 4 man-months. This item must be produced in a
+  Magical Forge.
+
+daisho (magical) [DAMG], weight 2. This item can only be used by a
+  samurai. This is a  armor-piercing weapon. Knowledge of ni-to [NITO]
+  is needed to wield this weapon. This weapon grants a bonus of 7 on
+  attack and defense. There is a 50% chance that the wielder of this
+  weapon gets a chance to attack in any given round. This weapon
+  cannot be used during assassination attempts. This weapon attacks
+  versus the target's defense against melee attacks. This weapon
+  allows a number of attacks equal to the skill level of the attacker
+  per round. Units with way of the samurai [WSAM] of at least level 5
+  may PRODUCE this item from katana (magical) [KAMG], wakizashi
+  (magical) [WAMG] at a rate of 1 per 5 man-months.
+
+dai-kyu (magical) [DKMG], weight 1. This is a ranged armor-piercing
+  weapon. The Dai-kyu is a heavy bow the height of a man requiring high
+  strength to draw and fire.
+  Knowledge of longbow [LBOW] is needed to wield this weapon.
+  This weapon grants a bonus of 2 on attack. Attackers do not get
+  skill bonus on defense. There is a 50% chance that the wielder of
+  this weapon gets a chance to attack in any given round. This weapon
+  cannot be used during assassination attempts. This weapon attacks
+  versus the target's defense against ranged attacks. This weapon
+  allows a number of attacks equal to the skill level of the attacker
+  per round. Units with master weaponsmith [MWEA] of at least level 5
+  may PRODUCE this item from 2 yew [YEW] at a rate of 1 per 5
+  man-months. This item must be produced in a Magical Forge.
+
+minor kami [MIKA], weight 10, flying capacity 5. This is a monster.
+  Kami are the magical spirits that inhabit this world.
+  This monster attacks with a combat skill of 3. This monster has a
+  resistance of 3 to melee attacks. This monster has a resistance of 3
+  to energy attacks. This monster has a resistance of 3 to spirit
+  attacks. This monster has a resistance of 3 to weather attacks. This
+  monster has a resistance of 3 to riding attacks. This monster has a
+  resistance of 3 to ranged attacks. Monster can cast a lightning
+  strike in battle at a skill level of 2. This ability does between 2
+  and 120 weather attacks. This ability does between 2 and 120 energy
+  attacks. This monster has 60 melee attacks per round and takes 60
+  hits to kill. This monster has a tactics score of 2, a stealth score
+  of 2, and an observation score of 2. This monster might have
+  advanced items and silver as treasure.
+
+kami [KAMI], weight 50, flying capacity 20. This is a monster. 
+  Kami are the magical spirits that inhabit this world. This
+  monster attacks with a combat skill of 4. This monster has a
+  resistance of 4 to melee attacks. This monster has a resistance of 4
+  to energy attacks. This monster has a resistance of 4 to spirit
+  attacks. This monster has a resistance of 4 to weather attacks. This
+  monster has a resistance of 4 to riding attacks. This monster has a
+  resistance of 4 to ranged attacks. Monster can cast a lightning
+  strike in battle at a skill level of 4. This ability does between 2
+  and 240 weather attacks. This ability does between 2 and 240 energy
+  attacks. This monster has 80 melee attacks per round and takes 80
+  hits to kill. This monster has a tactics score of 3, a stealth score
+  of 3, and an observation score of 3. This monster might have
+  advanced items and silver as treasure.
+
+major kami [MAKA], weight 250, flying capacity 50. This is a monster.
+  Kami are the magical spirits that inhabit this world.
+  This monster attacks with a combat skill of 5. This monster has a
+  resistance of 5 to melee attacks. This monster has a resistance of 5
+  to energy attacks. This monster has a resistance of 5 to spirit
+  attacks. This monster has a resistance of 5 to weather attacks. This
+  monster has a resistance of 5 to riding attacks. This monster has a
+  resistance of 5 to ranged attacks. Monster can cast a lightning
+  strike in battle at a skill level of 6. This ability does between 2
+  and 360 weather attacks. This ability does between 2 and 360 energy
+  attacks. This monster has 100 melee attacks per round and takes 100
+  hits to kill. This monster has a tactics score of 4, a stealth score
+  of 4, and an observation score of 4. This monster might have magic
+  items and silver as treasure.
+
+kappa [KAPP], weight 10, walking capacity 5, swimming capacity 5. 
+  The Kappa is a water being. It is usuallyscaled over its entire 
+  body, though sometimes one is relatively smooth-skinned. The Kappa
+  has a bowl-shaped depression on the topof its rather flat head.
+  This monster attacks with a combat skill of 4. This monster has 
+  a resistance of 4 to melee attacks. This monster has a
+  resistance of 3 to energy attacks. This monster has a resistance of
+  0 to spirit attacks. This monster has a resistance of 3 to weather
+  attacks. This monster has a resistance of 0 to riding attacks. This
+  monster has a resistance of 0 to ranged attacks. This monster has 20
+  melee attacks per round and takes 20 hits to kill. This monster has
+  a tactics score of 3, a stealth score of 3, and an observation score
+  of 2. This monster might have advanced items and silver as treasure.
+  This item cannot be given to other units.
+
+shikome [SHIK], weight 10, walking capacity 5. Shikome are humanoid 
+  and stand 4 to 5 feet tall. Their skin tends to be dusky and is 
+  often covered with warts. Though their personal habits are uncouth, 
+  they take meticulous care of their weapons. 
+  This monster attacks with a combat skill of 3. This monster has a
+  resistance of 3 to melee attacks. This monster has a resistance of 3
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 3 to weather attacks. This
+  monster has a resistance of 0 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 4 melee attacks
+  per round and takes 4 hits to kill. This monster has a tactics score
+  of 1, a stealth score of 0, and an observation score of 2. This
+  monster might have normal or trade items and silver as treasure.
+  This item cannot be given to other units.
+
+o-bakemono [OBAK], weight 10, walking capacity 5. 0-bakemono are 
+  big (6 to8feet), Dumb ogres. They are uncouth and unkept. 
+  Most are smooth-skinned, but some are scaled. All tend to wear
+  ill-smelling, patched clothes or skins. This monster attacks
+  with a combat skill of 3. This monster has a
+  resistance of 3 to melee attacks. This monster has a resistance of 2
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 2 to weather attacks. This
+  monster has a resistance of 0 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 10 melee attacks
+  per round and takes 10 hits to kill. This monster has a tactics
+  score of 0, a stealth score of 0, and an observation score of 0.
+  This monster might have normal or trade items and silver as
+  treasure. This item cannot be given to other units.
+
+hou-ou [HOUO], weight 250, walking capacity 50, riding capacity 50,
+  flying capacity 50. This is a monster. This monster attacks with a
+  combat skill of 4. This monster has a resistance of 4 to melee
+  attacks. This monster has a resistance of 4 to energy attacks. This
+  monster has a resistance of 4 to spirit attacks. This monster has a
+  resistance of 4 to weather attacks. This monster has a resistance of
+  3 to riding attacks. This monster has a resistance of 0 to ranged
+  attacks. This monster has 50 melee attacks per round and takes 50
+  hits to kill. This monster has a tactics score of 2, a stealth score
+  of 4, and an observation score of 4. This monster might have
+  advanced items and silver as treasure. This is a mount. This mount
+  requires riding [RIDI] of at least level 3 to ride in combat. This
+  mount gives a minimum bonus of +3 when ridden into combat. This
+  mount gives a maximum bonus of +5 when ridden into combat. This
+  mount gives a maximum bonus of +3 when ridden into combat in terrain
+  which allows ridden mounts but not flying mounts. Units with hawking
+  [HAWK] of at least level 5 may attempt to create this item via
+  magic.
+
+oni [ONI], weight 50, walking capacity 10, riding capacity 10. 
+  Oni are Supernatural Beings bridging the gap between the Spirits
+  of the invisible realms and the mortal creatures of this earth. 
+  Oni range in height from 1 to 2 m tall. They are hairy about
+  the face, not so much bearded as hirsute, with ragged, unkempt hair.
+  Their skins are rough, darkened by sun and wind, though human 
+  enough in texture. Their hands are clawed, This is
+  a monster. This monster attacks with a combat skill of 4. This
+  monster has a resistance of 4 to melee attacks. This monster has a
+  resistance of 4 to energy attacks. This monster has a resistance of
+  4 to spirit attacks. This monster has a resistance of 4 to weather
+  attacks. This monster has a resistance of 3 to riding attacks. This
+  monster has a resistance of 0 to ranged attacks. This monster has 10
+  melee attacks per round and takes 10 hits to kill. This monster has
+  a tactics score of 0, a stealth score of 0, and an observation score
+  of 0. This monster might have advanced items and silver as treasure.
+
+dai-oni [DAIO], weight 250, walking capacity 50, riding capacity 50,
+  flying capacity 50. Dai-Oni are Supernatural Beings bridging the 
+  gap between the Spirits of the invisible realms and the mortal 
+  creatures of this earth. Dai-oni, or "Oni Kings,"as they 
+  may be called, rule numerous Oni. They dress in stolen finery, 
+  which only serves to make their grotesque appearance pathetically 
+  funny as well as horrible. They are larger than the average Oni.
+  This monster attacks with a combat skill of 6. This monster has 
+  a resistance of 6 to melee attacks. This monster has a resistance
+  of 6 to energy attacks. This monster has a resistance of 6 
+  to spirit attacks. This monster has a resistance of 6 to 
+  weather attacks. This monster has a resistance of
+  5 to riding attacks. This monster has a resistance of 0 to ranged
+  attacks. Monster can cast hellfire in battle at a skill level of 6.
+  This ability does between 2 and 300 energy attacks. This monster has
+  200 melee attacks per round and takes 200 hits to kill. This monster
+  has a tactics score of 5, a stealth score of 5, and an observation
+  score of 5. This monster might have magic items and silver as
+  treasure.  A unit may have at most 1 dai-oni [DAIO].
+
+kitsune [KITS], weight 10, walking capacity 5. The Kitsune is a 
+  fox spirit. In fox form it looks like a long-furred fox. 
+  More powerful Kitsune often have more than one tail, the most
+  powerful of them having as many as nine.  
+  They can change form making them very hard to notice. This
+  monster attacks with a combat skill of 4. This monster has a
+  resistance of 3 to melee attacks. This monster has a resistance of 3
+  to energy attacks. This monster has a resistance of 3 to spirit
+  attacks. This monster has a resistance of 3 to weather attacks. This
+  monster has a resistance of 0 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 5 melee attacks
+  per round and takes 5 hits to kill. This monster has a tactics score
+  of 5, a stealth score of 5, and an observation score of 2. This
+  monster might have silver as treasure. This item cannot be given to
+  other units.
+
+bakemono-sho [BSHO], weight 10, walking capacity 5. The Bakemono-sho
+  is a humanoid goblin. Its skin is warty though of human hue.
+  Bakemono-sho are often hkempt and usually far from polite.
+  This monster attacks with a combat skill of 2. This monster has a
+  resistance of 2 to melee attacks. This monster has a resistance of 0
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 0 to weather attacks. This
+  monster has a resistance of 0 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 1 melee attack
+  per round and takes 1 hit to kill. This monster has a tactics score
+  of 0, a stealth score of 0, and an observation score of 0. This
+  monster might have normal or trade items and silver as treasure.
+  This item cannot be given to other units.
+
+yamatokage [YAMA], weight 10, walking capacity 5.The Yamatokage
+  is a gigantic, heavily-scaled, predatory lizard. 
+  It reaches a length of 30 feet, of which one-third is tail.
+  This monster attacks with a combat skill of 5. This monster has a
+  resistance of 3 to melee attacks. This monster has a resistance of 3
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 3 to weather attacks. This
+  monster has a resistance of 1 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 5 melee attacks
+  per round and takes 50 hits to kill. This monster has a tactics
+  score of 0, a stealth score of 0, and an observation score of 0.
+  This monster might have silver as treasure. This item cannot be
+  given to other units.
+
+kumo [KUMO], weight 10, walking capacity 5. This is a monster spider. This
+  monster attacks with a combat skill of 4. This monster has a
+  resistance of 4 to melee attacks. This monster has a resistance of 2
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 2 to weather attacks. This
+  monster has a resistance of 2 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 2 melee attacks
+  per round and takes 2 hits to kill. This monster has a tactics score
+  of 0, a stealth score of 2, and an observation score of 2. This
+  monster might have silver as treasure. This item cannot be given to
+  other units.
+
+yamabushi [YABU], weight 10, walking capacity 5. This is a monster.
+  The yamabushi are priests who also have a warrior orientation.
+  Given their warlike ways and their taste for hot time, which includes
+  drinking, gambling, wrestling, and even dallying with courtesans, 
+  have lost their magical abilities.
+  This monster attacks with a combat skill of 2. This monster has a
+  resistance of 2 to melee attacks. This monster has a resistance of 2
+  to energy attacks. This monster has a resistance of 2 to spirit
+  attacks. This monster has a resistance of 2 to weather attacks. This
+  monster has a resistance of 2 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 2 melee attacks
+  per round and takes 2 hits to kill. This monster has a tactics score
+  of 2, a stealth score of 3, and an observation score of 0. This
+  monster might have normal or trade items and silver as treasure.
+  This item cannot be given to other units.
+
+ronin [RONI], weight 10, walking capacity 5. This is a monster. 
+  The ronin are masterless samurai who have taken to crime to fund their lifestyle.
+  This monster attacks with a combat skill of 4. This monster has a
+  resistance of 2 to melee attacks. This monster has a resistance of 2
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 2 to weather attacks. This
+  monster has a resistance of 0 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 4 melee attacks
+  per round and takes 4 hits to kill. This monster has a tactics score
+  of 3, a stealth score of 0, and an observation score of 2. This
+  monster might have advanced items and silver as treasure. This item
+  cannot be given to other units.
+
+shugenja [SHUG], weight 10, walking capacity 5. This is a monster.
+  The Shugenja will rarely be clad in any distinctive manner,
+  preferring the garb of their caste or that suitable to a Scholar.
+  This monster attacks with a combat skill of 1. This monster has a
+  resistance of 1 to melee attacks. This monster has a resistance of 0
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 0 to weather attacks. This
+  monster has a resistance of 0 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. Monster can cast a fireball in
+  battle at a skill level of 3. This ability does between 2 and 30
+  energy attacks. This monster has 1 melee attack per round and takes
+  1 hit to kill. This monster has a tactics score of 3, a stealth
+  score of 0, and an observation score of 3. This monster might have
+  advanced items and silver as treasure. This item cannot be given to
+  other units.
+
+pilgrims [PILG], weight 10, walking capacity 5. This is a monster.
+  Pilgrims are groups of fanatical worshipers who won't let anyone stand in their way
+  This monster attacks with a combat skill of 1. This monster has a
+  resistance of 3 to melee attacks. This monster has a resistance of 3
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 3 to weather attacks. This
+  monster has a resistance of 0 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 1 melee attack
+  per round and takes 1 hit to kill. This monster has a tactics score
+  of 0, a stealth score of 0, and an observation score of 1. This
+  monster might have silver as treasure. This item cannot be given to
+  other units.
+
+bandit [BAND], weight 10, walking capacity 5. This is a monster. 
+  Bandits are petty thieves, plying the robber’s trade on the
+  highways. This monster attacks with a combat skill of 2. This monster has a
+  resistance of 2 to melee attacks. This monster has a resistance of 2
+  to energy attacks. This monster has a resistance of 0 to spirit
+  attacks. This monster has a resistance of 2 to weather attacks. This
+  monster has a resistance of 2 to riding attacks. This monster has a
+  resistance of 0 to ranged attacks. This monster has 2 melee attacks
+  per round and takes 2 hits to kill. This monster has a tactics score
+  of 0, a stealth score of 3, and an observation score of 1. This
+  monster might have normal or trade items and silver as treasure.
+  This item cannot be given to other units.
+
+gaki [GAKI], weight 10, flying capacity 5. This is a monster. 
+  Gaki appear as gaunt-faced monsters with enormous, frog-like mouths
+  and grossly distended bellies. They can also appear in the 
+  form they bore in life if they died with some overwhelming 
+  need or desire unfulfilled: hunger, greed, lust, etc. This
+  monster attacks with a combat skill of 5. This monster has a
+  resistance of 4 to melee attacks. This monster has a resistance of 5
+  to energy attacks. This monster has a resistance of 5 to spirit
+  attacks. This monster has a resistance of 3 to weather attacks. This
+  monster has a resistance of 2 to riding attacks. This monster has a
+  resistance of 5 to ranged attacks. Monster can cast cause fear in
+  battle at a skill level of 3. This ability will not target creatures
+  which are currently affected by fear. This ability cannot target
+  monsters. This ability does between 2 and 60 spirit attacks. Each
+  attack causes the target to be effected by fear (-2 to attack, -2
+  versus melee attacks, -2 versus riding attacks) for the rest of the
+  battle. This monster has 20 melee attacks per round and takes 50
+  hits to kill. This monsters regenerates 5 hits per round of battle.
+  This monster has a tactics score of 4, a stealth score of 4, and an
+  observation score of 1. This monster might have magic items and
+  silver as treasure.
+
+dragon blood [DBLO], weight 5. This item is part of the remains of a
+  slain dragon and may be used in the creation of artifacts. 
+
+dragon claw [DCLA], weight 5. This item is part of the remains of a
+  slain dragon and may be used in the creation of artifacts.
+
+dragon scale [DSCA], weight 10. This item is part of the remains of a
+  slain dragon and may be used in the creation of artifacts.
+
+gaki dust [GDUS], weight 1. This item is part of the remains of a
+  slain Gaki and may be used in the creation of artifacts.
+
+gaki ichor [GICH], weight 5. This item is part of the remains of a
+  slain Gaki and may be used in the creation of artifacts.
+
+gaki finger [GFIN], weight 1. This item is part of the remains of a
+  slain Gaki and may be used in the creation of artifacts.
+
+kami hair [KHAI], weight 1. This item is part of the remains of a
+  slain Kami and may be used in the creation of artifacts.
+
+kami heart [KHEA], weight 5. This item is part of the remains of a
+  slain Kami and may be used in the creation of artifacts.
+
+kami rib [KRIB], weight 5. This item is part of the remains of a
+  slain Kami and may be used in the creation of artifacts.
+
+oni blood [OBLO], weight 5. This item is part of the remains of a
+  slain Oni and may be used in the creation of artifacts.
+
+oni hide [OHID], weight 10. This item is part of the remains of a
+  slain Oni and may be used in the creation of artifacts.
+
+oni horn [OHOR], weight 5. This item is part of the remains of a
+  slain Oni and may be used in the creation of artifacts.
+
+
